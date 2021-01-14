@@ -8,6 +8,13 @@
  *  
  */
 
-function numberIncludes0() {}
+function numberIncludes0(num) {
+    let n = num.toString();
+    if (n.includes("0")) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 module.exports = numberIncludes0;

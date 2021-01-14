@@ -8,6 +8,14 @@
  * returns "hello"
  */
 
-function longestWord() {}
+const longestWord = words => {
+    return words.reduce((word1, word2) => {
+        if (word1.length >= word2.length) {
+            return word1
+        } else {
+            return word2
+        }
+    });
+}
 
 module.exports = longestWord;
